@@ -1,3 +1,5 @@
+'use client';
+
 import { db } from '@vercel/postgres';
 import bcrypt from 'bcrypt';
 import { customers, invoices, revenue, users } from '../lib/placeholder-data';
@@ -25,6 +27,7 @@ async function seedUsers() {
       `;
     }),
   );
+
 
   return insertedUsers;
 }
