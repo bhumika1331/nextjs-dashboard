@@ -1,4 +1,4 @@
-'use client';
+
 
 import { db } from '@vercel/postgres';
 import bcrypt from 'bcrypt';
